@@ -169,7 +169,9 @@ Large datasets and trained model files are excluded from version control.
 This project is intended for educational and research purposes only and should not be used for medical diagnosis.
 
 Screenshot:
-<img width="1882" height="965" alt="image" src="https://github.com/user-attachments/assets/d4a8c8e0-1df2-4422-860d-1844be0a3d24" />
+<p align="center">
+  <img src="demo_image_covid.png" alt="COVID-19 X-ray Classifier Demo" width="900"/>
+</p>
 
 
 🚀 Future Enhancements
