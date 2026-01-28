@@ -145,24 +145,21 @@ Confidence score
 
 🌐 Web Application
 Run Flask Backend
-bash
-Copy code
-python app.py
-Backend runs at:
+.\.venv\Scripts\activate
+pip install flask tensorflow pillow numpy
 
-arduino
-Copy code
+Backend runs at:
+python backend/flask_app.py
 http://localhost:5000
+Test Predict endpoint:
+curl.exe -X POST -F "file=@Covid19_dataset\COVID\images\COVID-11.png" http://127.0.0.1:5000/predict - to test predict endpoint
 Run React Frontend
-bash
-Copy code
+
 cd frontend
 npm install
 npm start
 Frontend runs at:
 
-arduino
-Copy code
 http://localhost:3000
 The frontend communicates with the Flask API to perform real-time predictions.
 
@@ -170,6 +167,10 @@ The frontend communicates with the Flask API to perform real-time predictions.
 Large datasets and trained model files are excluded from version control.
 
 This project is intended for educational and research purposes only and should not be used for medical diagnosis.
+
+Screenshot:
+<img width="1882" height="965" alt="image" src="https://github.com/user-attachments/assets/d4a8c8e0-1df2-4422-860d-1844be0a3d24" />
+
 
 🚀 Future Enhancements
 Add confusion matrix and ROC curves
